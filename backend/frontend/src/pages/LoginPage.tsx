@@ -29,7 +29,7 @@ const Login = () => {
         password,
       };
       const response = await fetch(
-        'http://localhost:3000/password-api/users/login',
+        `${window.location.origin}/password-api/users/login`,
         {
           method: 'POST',
           headers: {

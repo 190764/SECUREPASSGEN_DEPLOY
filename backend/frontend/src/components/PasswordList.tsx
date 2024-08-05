@@ -20,7 +20,7 @@ const PasswordItem: FC<PasswordProps> = ({
       const data = { id: password._id };
       console.log(data);
       const response = await fetch(
-        'http://localhost:3000/password-api/passwords/delete',
+        `${window.location.origin}/password-api/passwords/delete`,
         {
           method: 'DELETE',
           headers: {

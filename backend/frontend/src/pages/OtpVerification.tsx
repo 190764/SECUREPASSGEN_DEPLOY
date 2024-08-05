@@ -25,7 +25,7 @@ const OtpVerification = () => {
       };
       console.log(body);
       const response = await fetch(
-        'http://localhost:3000/password-api/otp/verify',
+        `${window.location.origin}/password-api/otp/verify`,
         {
           method: 'POST',
           headers: {

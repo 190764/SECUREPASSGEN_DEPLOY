@@ -47,7 +47,7 @@ const Register = () => {
         password,
       };
       const response = await fetch(
-        'http://localhost:3000/password-api/users/register',
+        `${window.location.origin}/password-api/users/register`,
         {
           method: 'POST',
           headers: {
@@ -73,7 +73,7 @@ const Register = () => {
           email,
         };
         const otpResponse = await fetch(
-          'http://localhost:3000/password-api/otp/generate',
+          `${window.location.origin}/password-api/otp/generate`,
           {
             method: 'POST',
             headers: {
